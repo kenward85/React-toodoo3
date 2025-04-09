@@ -1,19 +1,19 @@
-import './App.css'
+import './App.css';
+import TodoForm from './TodoForm';
+import TodoList from './TodoList';
 
 function App() {
-  const todos = [
-    {id: 1, title: "review resources"},
-    {id: 2, title: "take notes"},
-    {id: 3, title: "code out app"},
-  ]
+//commiting app
   return (
     <div>
-        <h1>Todo List</h1>
-        <ul>
-            {todos.map(todo => <li key={todo.id}>{todo.title}</li>)}
-        </ul>
+      <h1>Todo List</h1>
+      <TodoForm />
+      <TodoList />
     </div>
   );
 }
 
-export default App
+export default App;
+
+
+
