@@ -1,6 +1,6 @@
 import './App.css';
 import TodoForm from './TodoForm';
-import TodoList from './TodoList';
+import TodoList from './TodoLists'
 
 function App() {
   return (
@@ -13,6 +13,3 @@ function App() {
 }
 
 export default App;
-
-
-
