@@ -1,17 +1,16 @@
-import TodoListItem from './TodoListItem';
-
-function TodoList({ todoList }) {
+function TodoLists({ todoList }) {
   return (
-    //testing
     <ul>
       {todoList.map((todo) => (
-        <TodoListItem key={todo.id} todo={todo} />
+        <li key={todo.id}>{todo.title}</li>
       ))}
     </ul>
   );
 }
 
-export default TodoList;
+export default TodoLists;
+
+
 
 
 
