@@ -1,7 +1,9 @@
+import React from 'react';
 
-function TodoListItem({ todo }) {
-    return <li>{todo.title}</li>;
-  }
-  
-  export default TodoListItem;
+function TodoListItem({ title }) {
+  return <li>{title}</li>;
+}
+
+export default TodoListItem;
+
    
