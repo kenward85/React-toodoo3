@@ -1,13 +1,21 @@
-import React from 'react';
-
-function TodoForm() {
+function TodoForm({ newTodo, setNewTodo, handleAddTodo }) {
   return (
-    <form>
-      <label htmlFor="todoTitle">Todo</label>
-      <input type="text" id="todoTitle" />
-      <button type="submit">Add Todo</button>
+    <form onSubmit={handleAddTodo}>
+      <input
+        type="text"
+        placeholder="Enter a todo"
+        value={newTodo}
+        onChange={(e) => setNewTodo(e.target.value)}
+      />
+      <button type="submit">Add</button>
     </form>
   );
 }
 
 export default TodoForm;
+
+
+
+
+
+
